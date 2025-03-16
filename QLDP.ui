@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QLDP</class>
+ <widget class="QWidget" name="QLDP">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>842</width>
+    <height>463</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Quản Lý Đoàn Phí</string>
+  </property>
+  <widget class="QTableWidget" name="tableView_DoanPhi">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>821</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>Mã ĐP</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Tên đoàn viên</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Số tiền</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Ngày nộp</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Ghi chú</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Trạng thái</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QComboBox" name="cbbTrangThai">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>20</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Tất cả</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Đã nộp</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Chưa nộp</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="btnThuPhi">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>410</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Thu Phí</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnThongKe">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>410</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Thống Kê</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>20</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Lọc danh sách:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnUpdateNgayNop">
+   <property name="geometry">
+    <rect>
+     <x>462</x>
+     <y>410</y>
+     <width>131</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cập nhật ngày nộp</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

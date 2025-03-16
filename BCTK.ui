@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>929</width>
+    <height>856</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Báo cáo đoàn viên</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Xuất danh sách đoàn viên</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QComboBox" name="cbbKhoa"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txtTimKiem">
+          <property name="placeholderText">
+           <string>Nhập mã hoặc tên đoàn viên...</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tableDanhSachDV">
+        <column>
+         <property name="text">
+          <string>Mã ĐV</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Họ tên</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Khoa</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Chi đoàn</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Chức vụ</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="spacing">
+         <number>7</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="btnXuatExcel">
+          <property name="text">
+           <string>Xuất Excel</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnXuatPDF">
+          <property name="text">
+           <string>Xuất PDF</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Báo cáo số lượng đoàn viên theo khoa</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QTableWidget" name="tableSoLuongDV">
+        <column>
+         <property name="text">
+          <string>Khoa</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Số lượng đoàn viên</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cbbNamHocDV"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>Thống kê hoạt động đoàn theo năm học</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QTableWidget" name="tableHoatDong">
+        <column>
+         <property name="text">
+          <string>Tên hoạt động</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Ngày tổ chức</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Số lượng tham gia</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cbbNamHocHD"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

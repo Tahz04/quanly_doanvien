@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QLHoatDong</class>
+ <widget class="QWidget" name="QLHoatDong">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>841</width>
+    <height>703</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Quản lý Hoạt động Đoàn</string>
+  </property>
+  <widget class="QPushButton" name="btnXoa">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>310</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>🗑 Xóa</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSua">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>310</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>✏️ Sửa</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnThem">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>310</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>➕ Thêm</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableDoanVien">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>380</y>
+     <width>801</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <column>
+    <property name="text">
+     <string>Mã đoàn viên</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Họ tên</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Chi đoàn</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Khoa</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Khóa học</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QTableWidget" name="tableHoatDong">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>801</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <column>
+    <property name="text">
+     <string>ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Tên hoạt động</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Ngày tổ chức</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Địa điểm</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nội dung</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="btnTimKiem">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>20</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>🔍 Tìm kiếm</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtTimKiem">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>20</y>
+     <width>137</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="placeholderText">
+    <string>Tìm kiếm hoạt động...</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Quản lý hoạt động</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>345</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Đoàn viên tham gia:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnXoaDV">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>630</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>🗑 Xóa</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnThemDV">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>630</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>➕ Thêm</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtThemDV">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>630</y>
+     <width>181</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Nhập mã hoặc tên đoàn viên</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
