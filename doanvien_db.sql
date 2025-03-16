@@ -175,24 +175,6 @@ INSERT INTO `thamgiahoatdong` (`maDV`, `maHD`) VALUES
 (5, 1),
 (5, 2);
 
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `thongke_doanphi`
---
-
-CREATE TABLE `thongke_doanphi` (
-  `namHoc` varchar(9) NOT NULL,
-  `tongThu` decimal(15,2) DEFAULT 0.00,
-  `tongChi` decimal(15,2) DEFAULT 0.00
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Đang đổ dữ liệu cho bảng `thongke_doanphi`
---
-
-INSERT INTO `thongke_doanphi` (`namHoc`, `tongThu`, `tongChi`) VALUES
-('2023-2024', 1000000.00, 200000.00);
 
 -- --------------------------------------------------------
 
